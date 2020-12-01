@@ -17,8 +17,8 @@ public class syntaxLecture {
 //                 --x;
             System.out.print(x);
 
-            // Method invocations
-//                 Math.random();
+            // Method invocations //methods are basically functions that belong to a class
+        //         Math.random();
 
             // Object creation expressions
 //                 SomeObject = new SomeObject();
