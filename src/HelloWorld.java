@@ -31,9 +31,38 @@ public class HelloWorld {
 
         //7//
 
-        long myNumber = 123L;
-        System.out.println(myNumber);
+        //long myNumber = 123L;
+        //System.out.println(myNumber);
         //souts out 123 in terminal
+
+
+        //8//
+         //myNumber = 123;
+         //System.out.println(myNumber);
+         //souts 123 in terminal with nyNumber declared in above exercise
+
+        //long myNumber = 1234;
+        //System.out.println(myNumber);
+        //souts 123 in terminal
+
+
+        //9//
+
+//        long myNumber = 3.14;
+//        //System.out.println(myNumber);
+//        //compiler error incompatible types: possible lossy conversion from double to long
+//
+//        System.out.println();
+
+
+        //10//
+        int x = 5;
+        System.out.println(x++);
+        System.out.println(x);
+
+
+
+
 
     }
 }
