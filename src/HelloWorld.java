@@ -27,5 +27,13 @@ public class HelloWorld {
         //long myNumber = 3.14;
         //System.out.println(myNumber);
         // compiler error incompatible types: possible lossy conversion from double to long
+
+
+        //7//
+
+        long myNumber = 123L;
+        System.out.println(myNumber);
+        //souts out 123 in terminal
+
     }
 }
