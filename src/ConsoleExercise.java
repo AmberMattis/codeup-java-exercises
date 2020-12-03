@@ -9,34 +9,34 @@ public class ConsoleExercise {
 //        double pi = 3.14159;
 //        System.out.format("The value of pi is approximately %.2f.%n", pi);
 
-//
-//
+
+
 //        /* 2 */
 //
 //        System.out.println("Enter a random number!");
 //            int userNumber = userInput.nextInt();
 //            System.out.println(userNumber);
 //            //If the user inputs a number that is not a string, the terminal returns a compiler error.
-//
-//
+
+
 //        System.out.println("Enter your top three favorite foods!");
 //            String firstFood = userInput.next();
 //            String secondFood = userInput.next();
 //            String thirdFood = userInput.next();
-//
+
 //            System.out.println(firstFood);
 //            System.out.println(secondFood);
 //            System.out.println(thirdFood);
 //            userInput.nextLine();
 //            //If you enter less than three foods, the compiler will not return the user's inputs.
 //            //If you enter more than three foods, the compiler will only return the number of foods specified in the code.
-//
-//
-////        System.out.println("Enter your favorite inspirational quote");
-////            String userQuote = userInput.next();
-////            System.out.println(userQuote);
+
+
+//        System.out.println("Enter your favorite inspirational quote");
+//            String userQuote = userInput.next();
+//            System.out.println(userQuote);
 //            // This step only captures the first word in the sentence.
-//
+
 //        System.out.println("Enter your favorite inspirational quote");
 //            String userQuote = userInput.nextLine();
 //            System.out.println(userQuote);
@@ -57,6 +57,7 @@ public class ConsoleExercise {
             System.out.printf("The perimeter of the classroom is %d.%n", roomPerimeter);
 
 
+        /* BONUS */
 
     }
 }
