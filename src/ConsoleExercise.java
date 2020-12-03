@@ -45,9 +45,21 @@ public class ConsoleExercise {
 
         /* 3 */
 
-        System.out.println("Enter the length and width of the Jupiter classroom.");
+//        System.out.println("Enter the length and width of the Jupiter classroom.");
+//            String userLength = userInput.nextLine();
+//            String userWidth = userInput.next();
+//            int lengthNumber = Integer.parseInt(userLength);
+//            int widthNumber = Integer.parseInt(userWidth);
+//            int roomArea = lengthNumber * widthNumber;
+//            int roomPerimeter = (2 * lengthNumber) + (2 * widthNumber);
+//
+//            System.out.printf("The area of the classroom is %d.%n", roomArea);
+//            System.out.printf("The perimeter of the classroom is %d.%n", roomPerimeter);
+
+        System.out.println("Enter the length of the Jupiter classroom.");
             String userLength = userInput.nextLine();
-            String userWidth = userInput.next();
+            String userWidth = userInput.nextLine();
+
             int lengthNumber = Integer.parseInt(userLength);
             int widthNumber = Integer.parseInt(userWidth);
             int roomArea = lengthNumber * widthNumber;
@@ -55,6 +67,7 @@ public class ConsoleExercise {
 
             System.out.printf("The area of the classroom is %d.%n", roomArea);
             System.out.printf("The perimeter of the classroom is %d.%n", roomPerimeter);
+
 
 
         /* BONUS */
