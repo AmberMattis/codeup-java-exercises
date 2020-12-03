@@ -58,6 +58,8 @@ public class ConsoleExercise {
 
         System.out.println("Enter the length of the Jupiter classroom.");
             String userLength = userInput.nextLine();
+
+        System.out.println("Enter the width of the Jupiter classroom.");
             String userWidth = userInput.nextLine();
 
             int lengthNumber = Integer.parseInt(userLength);
