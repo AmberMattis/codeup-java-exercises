@@ -1,8 +1,12 @@
 import java.util.Scanner;
+//inport static java.lang.Integer
 public class ConsoleExercise {
     public static void main(String[] arg) {
 
         Scanner userInput = new Scanner(System.in);
+
+        //In Java EVERYTHING is an object
+
 
         /* 1 */
 
