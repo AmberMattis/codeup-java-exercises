@@ -10,7 +10,7 @@ public class MethodLecture {
 
             Method Overloading
 
-            Recursion
+            Recursion  - Where a method invokes itself
      */
     public static void  printJupiter(){
         System.out.println("Jupiter");
@@ -38,6 +38,7 @@ public class MethodLecture {
 
         printJupiter();
         printCohortName("IO");
+        soutHello(5);
 
 
 
@@ -96,6 +97,10 @@ public class MethodLecture {
 
     // ----------- OVERLOADING
 
+//    public static void sayHello() {
+//        System.out.println("hello");
+//    }
+
     //    public static void sayHello(int times) {
     //        for (int i = 0; i < times; i += 1) {
     //            sayHello();
@@ -116,6 +121,15 @@ public class MethodLecture {
     //    }
 
     // ----------- RECURSION
+
+    public static void soutHello(int num) {
+        if(num > 10){
+            return;
+        }
+
+        System.out.println("hello");
+        soutHello(num + 1); // each time it recurs it changes the value
+    }
 
     //    public static void countTo100Loop(int num) {
     //        for (int i = num; i <= 100; i += 1) {
@@ -140,5 +154,7 @@ public class MethodLecture {
     //            return n;
     //        }
     //        return fibonacci(n-1) + fibonacci(n-2);
+
+
 
 }
