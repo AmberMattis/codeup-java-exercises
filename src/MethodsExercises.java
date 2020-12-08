@@ -25,6 +25,8 @@ public class MethodsExercises {
     }
 
 
+
+
     //Creating a multiplication method without using * opertator (use a loop)
 
     public static int loopMultiplication(int numA, int numB) {
@@ -34,6 +36,8 @@ public class MethodsExercises {
         }
         return factor;
     }
+
+
 
     public static int recursionMultiplication(int numA, int numB) {
         if (numA == 0 || numB == 0) {
@@ -46,6 +50,8 @@ public class MethodsExercises {
         }
     }
 
+
+
     public static int range(int min, int max) {
         Scanner userInput = new Scanner(System.in);
         System.out.println("Enter a number between 1 and 10");
@@ -57,6 +63,8 @@ public class MethodsExercises {
         }
         return number;
     }
+
+
 
     public static long factorial(int min, int max) {
         Scanner userInput = new Scanner(System.in);
@@ -79,15 +87,7 @@ public class MethodsExercises {
 
 
 
-
-
-
-
-
-
-
     public static void main(String[] arg) {
-
 
         Scanner sideDice = new Scanner(System.in);
         Random sides = new Random();
@@ -128,11 +128,8 @@ public class MethodsExercises {
 
 
 
-//        System.out.println(range(1, 10));
-
-        System.out.println(factorial(1,10));
-
-
+//            System.out.println(range(1, 10));
+//            System.out.println(factorial(1,10));
 //            System.out.println(add(2, 2));
 //            System.out.println(subtract(2, 2));
 //            System.out.println(multiply(2, 2));
