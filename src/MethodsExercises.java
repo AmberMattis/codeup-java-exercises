@@ -91,7 +91,9 @@ public class MethodsExercises {
 
         Scanner sideDice = new Scanner(System.in);
         Random sides = new Random();
+        boolean playAgain = true;
 
+        do{
         System.out.println("Enter number of sides for first die");
         int die1 = Integer.parseInt(sideDice.nextLine());
 
@@ -106,11 +108,23 @@ public class MethodsExercises {
         System.out.println("Would you like to roll the dice? [y/n]");
         String option = choice.nextLine();
         String yes = "y";
-        if(option.equals(yes)) {
+        String no = "n";
+        if(option.equalsIgnoreCase(yes)) {
             System.out.printf("You rolled %d and %d.%n%n", number1, number2);
         }else{
             System.out.println("Abort");
         }
+
+
+        System.out.println("Would you like to roll again? [y/n]");
+        String newOption = choice.nextLine();
+        if(newOption.equalsIgnoreCase(no)){
+            playAgain = false;
+            System.out.printf("Aaaaaw you were on a roll!%n%n");
+            }
+        }
+        while(playAgain);
+
 
 
 
