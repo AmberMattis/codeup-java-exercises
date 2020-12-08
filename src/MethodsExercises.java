@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class MethodsExercises {
 
@@ -77,20 +78,41 @@ public class MethodsExercises {
     }
 
 
-    public static String dice(int dieA, int dieB){
-        Scanner sideDice = new Scanner(System.in);
-        System.out.println("Enter number of sides for first die");
-        int die1 = Integer.parseInt(sideDice.nextLine());
-        System.out.println("Enter number of sides for the second die");
-        int die2 = Integer.parseInt(sideDice.nextLine());
-        System.out.printf("The first die has %d sides.%n The second die has %d sides.", die1, die2);
 
-    }
+
+
+
+
+
 
 
     public static void main(String[] arg) {
 
-        System.out.println(dice());
+
+        Scanner sideDice = new Scanner(System.in);
+        Random sides = new Random();
+
+        System.out.println("Enter number of sides for first die");
+        int die1 = Integer.parseInt(sideDice.nextLine());
+
+        System.out.println("Enter number of sides for the second die");
+        int die2 = Integer.parseInt(sideDice.nextLine());
+
+        System.out.printf("The first die has %d sides.%nThe second die has %d sides.%n%n", die1, die2);
+        int number1 = 1 + sides.nextInt(die1);
+        int number2 = 1 + sides.nextInt(die2);
+
+        Scanner choice = new Scanner(System.in);
+        System.out.println("Would you like to roll the dice? [y/n]");
+        String option = choice.nextLine();
+        String yes = "y";
+        if(option.equals(yes)) {
+            System.out.printf("You rolled %d and %d.%n%n", number1, number2);
+        }else{
+            System.out.println("Abort");
+        }
+
+
 
 //        System.out.println(range(1, 10));
 
