@@ -26,7 +26,6 @@ public class MethodsExercises {
 
 
 
-
     //Creating a multiplication method without using * opertator (use a loop)
 
     public static int loopMultiplication(int numA, int numB) {
@@ -114,7 +113,6 @@ public class MethodsExercises {
         }else{
             System.out.println("Abort");
         }
-
 
         System.out.println("Would you like to roll again? [y/n]");
         String newOption = choice.nextLine();
