@@ -8,17 +8,18 @@ public class Person {
 
     // SLIDE 4
 
-//        // instance variables
-        public String firstName;
-        public String lastName;
-//
+    //        // instance variables
+    public String firstName;
+    public String lastName;
+
+    //
 //        // instance method
-        public String sayHello() {
-                return lastName + ", " + firstName + " says hi!";
+    public String sayHello() {
+        return lastName + ", " + firstName + " says hi!";
 //        }
 
 
-    // SLIDE 7
+        // SLIDE 7
 //        public static long worldPopulation = 7_500_000_000L; // class property
 //        public String name;                                  // instance property
 //
@@ -38,4 +39,5 @@ public class Person {
 ////                 System.out.println(oopLecture.Person.name);
 //        }
 
+    }
 }
