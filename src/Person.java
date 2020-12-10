@@ -30,8 +30,14 @@ public class Person {
         p1.sayHello();
         System.out.println(p1.setName("Anderson"));
 
-        System.out.println(p1.getName().equals(p2.getName()));
-        System.out.println(p1 == p2);
+//        System.out.println(p1.getName().equals(p2.getName()));
+//        System.out.println(p1 == p2);
+
+        System.out.println(p1.getName());
+        System.out.println(p2.getName());
+        p2.setName("Jane");
+        System.out.println(p1.getName());
+        System.out.println(p2.getName());
 
 
     }
