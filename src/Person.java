@@ -24,14 +24,15 @@ public class Person {
 
     public static void main(String [] args){
         Person p1 = new Person("Amber");
-        Person p2 = p1;
+
+        Person p2 = p1; // pointing to the same object
 
         System.out.println(p1.getName());
         p1.sayHello();
         System.out.println(p1.setName("Anderson"));
 
-//        System.out.println(p1.getName().equals(p2.getName()));
-//        System.out.println(p1 == p2);
+        System.out.println(p1.getName().equals(p2.getName()));
+        System.out.println(p1 == p2);
 
         System.out.println(p1.getName());
         System.out.println(p2.getName());
