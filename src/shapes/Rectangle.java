@@ -4,18 +4,29 @@ public class Rectangle {
     protected int length;
     protected int width;
 
-    public Rectangle(int userLength, int userWidth){
-        this.length = userLength;
-        this.width = userWidth;
+    public Rectangle(int sides){
+        this.length = sides;
+        this.width = sides;
+    }
+    public Rectangle(int length, int width){
+        this.length = length;
+        this.width = width;
     }
 
-    public static int getArea(int length, int width){
-        return length * width;
+    public Rectangle(){
+
     }
 
-    public static int getPerimeter(int length, int width){
-        return (2 * length) + (2 * width);
+    public int getArea(){
+        int area = this.length * this.width;
+        return area;
     }
+
+    public int getPerimeter(){
+        int perimeter = 2 * this.length + 2 * this.width;
+        return perimeter;
+    }
+
 
 }
 
