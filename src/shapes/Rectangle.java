@@ -8,13 +8,13 @@ public class Rectangle {
         this.length = sides;
         this.width = sides;
     }
+
     public Rectangle(int length, int width){
         this.length = length;
         this.width = width;
     }
 
     public Rectangle(){
-
     }
 
     public int getArea(){
