@@ -12,6 +12,10 @@ public class Input {
         return min;
     }
 
+    public static double getDouble(double input){
+        return input;
+    }
+
     public static boolean yesNo(String input){
         if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")){
             return true;
