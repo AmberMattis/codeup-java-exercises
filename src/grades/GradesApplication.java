@@ -71,7 +71,7 @@ public class GradesApplication extends Student {
         System.out.println("-------------------------------------------------------------------------");
         System.out.println("|  | Ambercrombie |   | dole.or.Bill |   | Ashleyknees |   | Ritabook |  |");
         System.out.println("-------------------------------------------------------------------------");
-        System.out.println("            Would you like to get more info about a student? [y/n]");
+        System.out.println("\n       Would you like to get more info about a student? [y/n]");
 
 
         Scanner scn = new Scanner(System.in);
@@ -79,29 +79,74 @@ public class GradesApplication extends Student {
         boolean getStudentInfo = true;
 
 
+        // conditional that checks if user wants to get info and responds based on user's response.
+
         if (userInput.equalsIgnoreCase("Yes") || userInput.equalsIgnoreCase("y")) {
-            System.out.println("Which student would you like to know more about?");
+            System.out.println("\nWhich student would you like to know more about?");
         } else if (userInput.equalsIgnoreCase("no") || userInput.equalsIgnoreCase("n")) {
             getStudentInfo = false;
             System.out.println("goodbye");
         } else {
-            System.out.println("Username is not valid");
+            System.out.println("Response is not valid");
         }
 
 
-        Scanner scn2 = new Scanner(System.in);
-        userInput = scn2.nextLine();
+        //do while loop to used to get Student info based off users input
 
-        if (userInput.equals("Ambercrombie")) {
-            System.out.println("Name: " + student1.getName() + "\n" + "Grade: " + student1.getGradeAverage());
-            for (String key : keys) {
-                if (students.get(key).equals(student1.getGrade())) {
-                    System.out.println("Username: " + key);
+        do {
+            Scanner scn2 = new Scanner(System.in);
+            userInput = scn2.nextLine();
+
+            if (userInput.equals("Ambercrombie")) {
+                System.out.println("Name: " + student1.getName() + "\n" + "Grade: " + student1.getGradeAverage());
+                for (String key : keys) {
+                    if (students.get(key).equals(student1.getGrade())) {
+                        System.out.println("Username: " + key);
+                    }
                 }
-
+            } else if (userInput.equals("dole.or.Bill")) {
+                System.out.println("Name: " + student2.getName() + "\n" + "Grade: " + student2.getGradeAverage());
+                for (String key : keys) {
+                    if (students.get(key).equals(student2.getGrade())) {
+                        System.out.println("Username: " + key);
+                    }
+                }
+            } else if (userInput.equals("Ashleyknees")) {
+                System.out.println("Name: " + student3.getName() + "\n" + "Grade: " + student3.getGradeAverage());
+                for (String key : keys) {
+                    if (students.get(key).equals(student3.getGrade())) {
+                        System.out.println("Username: " + key);
+                    }
+                }
+            } else if (userInput.equals("Ritabook")) {
+                System.out.println("Name: " + student4.getName() + "\n" + "Grade: " + student4.getGradeAverage());
+                for (String key : keys) {
+                    if (students.get(key).equals(student4.getGrade())) {
+                        System.out.println("Username: " + key);
+                    }
+                }
+            } else {
+                System.out.println("Username not valid");
             }
 
+            System.out.println("\nWould you like to get another student's information?");
+            Scanner scn3 = new Scanner(System.in);
+            userInput = scn3.nextLine();
+
+            if (userInput.equalsIgnoreCase("yes") || userInput.equalsIgnoreCase("y")) {
+                System.out.println("\nWhich student would you like to know more about?");
+            } else if (userInput.equalsIgnoreCase("no") || userInput.equalsIgnoreCase("n")) {
+                System.out.println("goodbye");
+                getStudentInfo = false;
+            } else {
+                System.out.println("Response not valid");
+               break;
+
+            }
         }
+
+        while(getStudentInfo);
+
     }
 }
 
