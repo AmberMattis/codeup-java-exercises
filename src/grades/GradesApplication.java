@@ -45,6 +45,9 @@ public class GradesApplication extends Student {
         students.put("Ritabook", student4.getGrade());
         System.out.println(students);
 
+
+
+        // this is so we can create the fol loop for the hashmap keys in our conditionals loop
         Set<String> keys = students.keySet();
 
         // 3. Command Line Interface
@@ -88,12 +91,14 @@ public class GradesApplication extends Student {
             System.out.println("goodbye");
         } else {
             System.out.println("Response is not valid");
+            getStudentInfo = false;
         }
 
 
         //do while loop to used to get Student info based off users input
 
         do {
+
             Scanner scn2 = new Scanner(System.in);
             userInput = scn2.nextLine();
 
@@ -139,8 +144,9 @@ public class GradesApplication extends Student {
                 System.out.println("goodbye");
                 getStudentInfo = false;
             } else {
-                System.out.println("Response not valid");
-               break;
+                System.out.println("Response not valid try again");
+                getStudentInfo = false;
+
 
             }
         }
