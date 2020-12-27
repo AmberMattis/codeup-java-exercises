@@ -41,21 +41,26 @@ public class Zoo {
 //        python.move();
 //        python.shed();
 //        System.out.println("\n\n");
+//
+//        System.out.println("Boa Constrictor\n");
+//        BoaConstrictor snake1 = new BoaConstrictor(5,"male",64);
+//        snake1.eat();
+//        snake1.sleep();
+//        snake1.move();
+//        snake1.shed();
+//        snake1.constrict();
+//        System.out.println("\n\n");
+//
+//        System.out.println("Kangaroo Jack\n");
+//        Kangaroo jack = new Kangaroo(3,"male",100);
+//        jack.eat();
+//        jack.sleep();
+//        jack.move();
 
-        System.out.println("Boa Constrictor\n");
-        BoaConstrictor snake1 = new BoaConstrictor(5,"male",64);
-        snake1.eat();
-        snake1.sleep();
-        snake1.move();
-        snake1.shed();
-        snake1.constrict();
-        System.out.println("\n\n");
-
-        System.out.println("Kangaroo Jack\n");
-        Kangaroo jack = new Kangaroo(3,"male",100);
-        jack.eat();
-        jack.sleep();
-        jack.move();
+        Snake gardenSnake = new Snake(1, "female", 1);
+        gardenSnake.eat();
+        gardenSnake.sleep();
+        gardenSnake.move();
     }
 }
 
