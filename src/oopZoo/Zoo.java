@@ -61,6 +61,11 @@ public class Zoo {
         gardenSnake.eat();
         gardenSnake.sleep();
         gardenSnake.move();
+
+        Bird eagle = new Bird(5,"male",60);
+        eagle.eat();
+        eagle.sleep();
+        eagle.move();
     }
 }
 
